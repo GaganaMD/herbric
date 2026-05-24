@@ -1,0 +1,5 @@
+Acme Robotics reduced assembly defect rates by 18% after introducing machine-vision checkpoints.
+
+However, quality incidents increased in one plant where sensor calibration drifted and alerts were ignored for three weeks.
+
+Management claims the rollout is scalable globally, but staffing for maintenance and calibration remains inconsistent across sites.

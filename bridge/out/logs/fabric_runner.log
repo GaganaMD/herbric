@@ -1,0 +1,44 @@
+[2026-05-24T10:34:36Z] chunk=1 pattern=extract_wisdom cmd=fabric --pattern extract_wisdom
+[2026-05-24T10:34:36Z] ERROR chunk=1 pattern=extract_wisdom exit=1 stderr='fabric' is not recognized as an internal or external command,
+operable program or batch file.
+[2026-05-24T10:34:36Z] chunk=1 pattern=summarize cmd=fabric --pattern summarize
+[2026-05-24T10:34:36Z] ERROR chunk=1 pattern=summarize exit=1 stderr='fabric' is not recognized as an internal or external command,
+operable program or batch file.
+[2026-05-24T10:34:36Z] chunk=1 pattern=analyze_claims cmd=fabric --pattern analyze_claims
+[2026-05-24T10:34:36Z] ERROR chunk=1 pattern=analyze_claims exit=1 stderr='fabric' is not recognized as an internal or external command,
+operable program or batch file.
+[2026-05-24T10:34:36Z] chunk=1 pattern=create_5_sentence_summary cmd=fabric --pattern create_5_sentence_summary
+[2026-05-24T10:34:36Z] ERROR chunk=1 pattern=create_5_sentence_summary exit=1 stderr='fabric' is not recognized as an internal or external command,
+operable program or batch file.
+[2026-05-24T10:57:49Z] chunk=1 pattern=extract_wisdom cmd=cd ./Fabric && "/c/Program Files/Go/bin/go.exe" run ./cmd/fabric --pattern extract_wisdom
+[2026-05-24T10:57:50Z] ERROR chunk=1 pattern=extract_wisdom exit=1 stderr=The system cannot find the path specified.
+[2026-05-24T10:57:50Z] chunk=1 pattern=summarize cmd=cd ./Fabric && "/c/Program Files/Go/bin/go.exe" run ./cmd/fabric --pattern summarize
+[2026-05-24T10:57:50Z] ERROR chunk=1 pattern=summarize exit=1 stderr=The system cannot find the path specified.
+[2026-05-24T10:57:50Z] chunk=1 pattern=analyze_claims cmd=cd ./Fabric && "/c/Program Files/Go/bin/go.exe" run ./cmd/fabric --pattern analyze_claims
+[2026-05-24T10:57:50Z] ERROR chunk=1 pattern=analyze_claims exit=1 stderr=The system cannot find the path specified.
+[2026-05-24T10:57:50Z] chunk=1 pattern=create_5_sentence_summary cmd=cd ./Fabric && "/c/Program Files/Go/bin/go.exe" run ./cmd/fabric --pattern create_5_sentence_summary
+[2026-05-24T10:57:50Z] ERROR chunk=1 pattern=create_5_sentence_summary exit=1 stderr=The system cannot find the path specified.
+[2026-05-24T10:58:36Z] chunk=1 pattern=extract_wisdom cmd=cd Fabric && "C:\Program Files\Go\bin\go.exe" run ./cmd/fabric --pattern extract_wisdom
+[2026-05-24T10:58:37Z] ERROR chunk=1 pattern=extract_wisdom exit=1 stderr=error loading .env file: open C:\Users\gagan\.config\fabric\.env: The system cannot find the file specified.
+error loading .env file: open C:\Users\gagan\.config\fabric\.env: The system cannot find the file specified.
+exit status 1
+[2026-05-24T10:58:37Z] chunk=1 pattern=summarize cmd=cd Fabric && "C:\Program Files\Go\bin\go.exe" run ./cmd/fabric --pattern summarize
+[2026-05-24T10:58:37Z] ERROR chunk=1 pattern=summarize exit=1 stderr=error loading .env file: open C:\Users\gagan\.config\fabric\.env: The system cannot find the file specified.
+error loading .env file: open C:\Users\gagan\.config\fabric\.env: The system cannot find the file specified.
+exit status 1
+[2026-05-24T10:58:37Z] chunk=1 pattern=analyze_claims cmd=cd Fabric && "C:\Program Files\Go\bin\go.exe" run ./cmd/fabric --pattern analyze_claims
+[2026-05-24T10:58:38Z] ERROR chunk=1 pattern=analyze_claims exit=1 stderr=error loading .env file: open C:\Users\gagan\.config\fabric\.env: The system cannot find the file specified.
+error loading .env file: open C:\Users\gagan\.config\fabric\.env: The system cannot find the file specified.
+exit status 1
+[2026-05-24T10:58:38Z] chunk=1 pattern=create_5_sentence_summary cmd=cd Fabric && "C:\Program Files\Go\bin\go.exe" run ./cmd/fabric --pattern create_5_sentence_summary
+[2026-05-24T10:58:38Z] ERROR chunk=1 pattern=create_5_sentence_summary exit=1 stderr=error loading .env file: open C:\Users\gagan\.config\fabric\.env: The system cannot find the file specified.
+error loading .env file: open C:\Users\gagan\.config\fabric\.env: The system cannot find the file specified.
+exit status 1
+[2026-05-24T12:23:21Z] chunk=1 pattern=extract_wisdom cmd=cd Fabric && "C:\Program Files\Go\bin\go.exe" run ./cmd/fabric --pattern extract_wisdom
+[2026-05-24T12:24:05Z] chunk=1 pattern=summarize cmd=cd Fabric && "C:\Program Files\Go\bin\go.exe" run ./cmd/fabric --pattern summarize
+[2026-05-24T12:24:11Z] chunk=1 pattern=analyze_claims cmd=cd Fabric && "C:\Program Files\Go\bin\go.exe" run ./cmd/fabric --pattern analyze_claims
+[2026-05-24T12:24:35Z] chunk=1 pattern=create_5_sentence_summary cmd=cd Fabric && "C:\Program Files\Go\bin\go.exe" run ./cmd/fabric --pattern create_5_sentence_summary
+[2026-05-24T12:29:19Z] chunk=1 pattern=extract_wisdom cmd=cd Fabric && "C:\Program Files\Go\bin\go.exe" run ./cmd/fabric --pattern extract_wisdom
+[2026-05-24T12:30:24Z] chunk=1 pattern=summarize cmd=cd Fabric && "C:\Program Files\Go\bin\go.exe" run ./cmd/fabric --pattern summarize
+[2026-05-24T12:30:30Z] chunk=1 pattern=analyze_claims cmd=cd Fabric && "C:\Program Files\Go\bin\go.exe" run ./cmd/fabric --pattern analyze_claims
+[2026-05-24T12:30:51Z] chunk=1 pattern=create_5_sentence_summary cmd=cd Fabric && "C:\Program Files\Go\bin\go.exe" run ./cmd/fabric --pattern create_5_sentence_summary

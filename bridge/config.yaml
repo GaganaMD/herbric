@@ -1,0 +1,43 @@
+paths:
+  input_file: "./bridge/small_input.txt"
+  output_dir: "./bridge/out"
+  combined_context_file: "./bridge/out/combined_context.md"
+  fabric_outputs_dir: "./bridge/out/fabric_outputs"
+  logs_dir: "./bridge/out/logs"
+
+chunking:
+  max_chars: 5000
+  overlap_chars: 500
+  preserve_paragraphs: true
+
+fabric:
+  enabled: true
+  # Repo-local invocation (no Fabric source changes): run Fabric from ./Fabric via Go.
+  command: "cd Fabric && \"C:\\Program Files\\Go\\bin\\go.exe\" run ./cmd/fabric"
+  patterns:
+    - extract_wisdom
+    - summarize
+    - analyze_claims
+    - create_5_sentence_summary
+  # stdin text is piped to Fabric. {pattern} is substituted.
+  command_template: "{fabric_command} --pattern {pattern}"
+  continue_on_error: true
+
+aggregation:
+  include_raw_chunk_text: false
+  include_pattern_headers: true
+
+hermes:
+  enabled: true
+  command: "hermes"
+  # {prompt_file} is substituted and should be shell-readable in git-bash.
+  # Default uses hermes oneshot mode and injects context file content.
+  command_template: "{hermes_command} -z \"$(cat {prompt_file})\""
+  final_prompt_header: |
+    You are given structured research context produced from chunk-level Fabric analysis.
+    Produce:
+    1) key findings
+    2) unresolved risks/unknowns
+    3) contradictions across chunks
+    4) prioritized follow-up questions
+    Keep evidence vs inference clearly separated.

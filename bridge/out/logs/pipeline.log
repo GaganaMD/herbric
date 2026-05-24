@@ -1,0 +1,35 @@
+[2026-05-24T10:34:36Z] Starting pipeline with config=./bridge/config.yaml
+[2026-05-24T10:34:36Z] Resolved input_file=C:\Users\gagan\Desktop\hermes+fabric\input.txt
+[2026-05-24T10:34:36Z] Chunking complete: 1 chunks
+[2026-05-24T10:34:36Z] Fabric summary: {'total_runs': 4, 'failed_runs': 4, 'successful_runs': 0}
+[2026-05-24T10:34:36Z] Wrote combined context: C:\Users\gagan\Desktop\hermes+fabric\bridge\out\combined_context.md
+[2026-05-24T10:34:56Z] Hermes exit=0 output=C:\Users\gagan\Desktop\hermes+fabric\bridge\out\hermes_final_output.md
+[2026-05-24T10:34:56Z] Pipeline complete
+[2026-05-24T10:57:49Z] Starting pipeline with config=C:/Users/gagan/Desktop/hermes+fabric/bridge/config.yaml
+[2026-05-24T10:57:49Z] Resolved input_file=C:\Users\gagan\Desktop\hermes+fabric\bridge\small_input.txt
+[2026-05-24T10:57:49Z] Chunking complete: 1 chunks
+[2026-05-24T10:57:50Z] Fabric summary: {'total_runs': 4, 'failed_runs': 4, 'successful_runs': 0}
+[2026-05-24T10:57:50Z] Wrote combined context: C:\Users\gagan\Desktop\hermes+fabric\bridge\out\combined_context.md
+[2026-05-24T10:58:10Z] Hermes exit=0 output=C:\Users\gagan\Desktop\hermes+fabric\bridge\out\hermes_final_output.md
+[2026-05-24T10:58:10Z] Pipeline complete
+[2026-05-24T10:58:36Z] Starting pipeline with config=C:/Users/gagan/Desktop/hermes+fabric/bridge/config.yaml
+[2026-05-24T10:58:36Z] Resolved input_file=C:\Users\gagan\Desktop\hermes+fabric\bridge\small_input.txt
+[2026-05-24T10:58:36Z] Chunking complete: 1 chunks
+[2026-05-24T10:58:38Z] Fabric summary: {'total_runs': 4, 'failed_runs': 4, 'successful_runs': 0}
+[2026-05-24T10:58:38Z] Wrote combined context: C:\Users\gagan\Desktop\hermes+fabric\bridge\out\combined_context.md
+[2026-05-24T10:59:01Z] Hermes exit=0 output=C:\Users\gagan\Desktop\hermes+fabric\bridge\out\hermes_final_output.md
+[2026-05-24T10:59:01Z] Pipeline complete
+[2026-05-24T12:23:21Z] Starting pipeline with config=./bridge/config.yaml
+[2026-05-24T12:23:21Z] Resolved input_file=C:\Users\gagan\Desktop\hermes+fabric\bridge\small_input.txt
+[2026-05-24T12:23:21Z] Chunking complete: 1 chunks
+[2026-05-24T12:24:37Z] Fabric summary: {'total_runs': 4, 'failed_runs': 0, 'successful_runs': 4}
+[2026-05-24T12:24:37Z] Wrote combined context: C:\Users\gagan\Desktop\hermes+fabric\bridge\out\combined_context.md
+[2026-05-24T12:25:29Z] Hermes exit=0 output=C:\Users\gagan\Desktop\hermes+fabric\bridge\out\hermes_final_output.md
+[2026-05-24T12:25:29Z] Pipeline complete
+[2026-05-24T12:29:19Z] Starting pipeline with config=C:/Users/gagan/Desktop/hermes+fabric/bridge/config.yaml
+[2026-05-24T12:29:19Z] Resolved input_file=C:\Users\gagan\Desktop\hermes+fabric\bridge\small_input.txt
+[2026-05-24T12:29:19Z] Chunking complete: 1 chunks
+[2026-05-24T12:30:53Z] Fabric summary: {'total_runs': 4, 'failed_runs': 0, 'successful_runs': 4}
+[2026-05-24T12:30:53Z] Wrote combined context: C:\Users\gagan\Desktop\hermes+fabric\bridge\out\combined_context.md
+[2026-05-24T12:31:27Z] Hermes exit=0 output=C:\Users\gagan\Desktop\hermes+fabric\bridge\out\hermes_final_output.md
+[2026-05-24T12:31:27Z] Pipeline complete

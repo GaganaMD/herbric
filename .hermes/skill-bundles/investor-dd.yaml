@@ -1,0 +1,40 @@
+name: investor-dd
+
+description: |
+  Institutional-quality investor due diligence workflow for generating
+  analytics-driven, research-grounded, investor-facing DD presentations.
+
+philosophy: |
+  This workflow transforms raw diligence materials into institutional
+  investment reasoning.
+
+  The goal is not summarization.
+  The goal is:
+  - underwriting clarity
+  - conviction assessment
+  - risk identification
+  - operational interpretation
+  - investment decision support
+
+skills:
+  - company-grounding
+  - financial-dd-analysis
+  - investor-storytelling
+  - presentation-design
+  - visual-qa
+
+workflow:
+  - company-grounding
+  - financial-dd-analysis
+  - investor-storytelling
+  - presentation-design
+  - visual-qa
+
+runtime_defaults:
+  render_qa: true
+  investor_mode: institutional
+  visual_standard: investment_committee
+  chart_density: moderate
+  analytics_priority: balanced
+  presentation_priority: high
+  visual_storytelling: institutional
