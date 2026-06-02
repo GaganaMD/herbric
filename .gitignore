@@ -216,3 +216,14 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Local DD/demo artifacts that may contain client-sensitive material.
+DD_Metrics_Comprehensive_Workbook.xlsx
+prompt.txt
+hermes_investor_dd_tonbo/
+hermes_tonbo_visual_upgrade/logs/
+hermes_tonbo_visual_upgrade/output/
+hermes_tonbo_visual_upgrade/research/
+hermes_tonbo_visual_upgrade/assets_raw/
+hermes_tonbo_visual_upgrade/assets_selected/
+hermes_tonbo_visual_upgrade/assets_filtered/

@@ -98,18 +98,11 @@ docs/
   BRIDGE_INTERNAL_ARCHITECTURE_DEEP_DIVE.md
   assets/
 
-hermes_investor_dd_tonbo/
-  bridge_inputs/
-  analytics/
-  scripts/
-  output/
-
 hermes_tonbo_visual_upgrade/
   scripts/
-  research/
-  output/
-  assets_*/
 ```
+
+Historical DD/demo inputs, generated decks, scraped logs, raw visual assets, and extracted workbook artifacts are kept local-only and ignored by Git because they may contain company-sensitive material.
 
 ## Quick Start
 
