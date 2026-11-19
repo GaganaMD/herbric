@@ -7,7 +7,7 @@ from pptx.enum.chart import XL_CHART_TYPE
 from pptx.dml.color import RGBColor
 import matplotlib.pyplot as plt
 
-BASE = Path(r"C:/Users/gagan/Desktop/hermes+fabric/hermes_tonbo_visual_upgrade")
+BASE = Path(__file__).resolve().parents[1]  # project folder, whatever it is named locally
 OUT = BASE / "output"
 SEL = BASE / "assets_selected"
 CH = BASE / "output" / "charts"
@@ -57,7 +57,7 @@ def add_panel(slide,left,top,w,h,title,items):
 s=prs.slides.add_slide(prs.slide_layouts[6])
 if pic(0): s.shapes.add_picture(pic(0),0,0,width=W,height=H)
 overlay=s.shapes.add_shape(1,Inches(0),Inches(0),Inches(13.33),Inches(1.6)); overlay.fill.solid(); overlay.fill.fore_color.rgb=RGBColor(8,17,35); overlay.fill.transparency=20; overlay.line.fill.background()
-add_title(s,'Tonbo Imaging | Investor Diligence Underwriting Deck',top=0.35,left=0.5,width=12.4)
+add_title(s,'Company | Investor Diligence Underwriting Deck',top=0.35,left=0.5,width=12.4)
 
 # 2 exec dashboard
 s=prs.slides.add_slide(prs.slide_layouts[6]); add_title(s,'Executive underwriting dashboard')
@@ -169,6 +169,6 @@ add_panel(s,0.8,1.5,7.2,4.8,'Primary evidence',[
  'Where imagery provenance is non-official, source URL is retained in image manifest.'
 ])
 
-out = OUT / 'Tonbo_Investor_DD_Deck_visual_v3.pptx'
+out = OUT / 'Company_Investor_DD_Deck_visual_v3.pptx'
 prs.save(out)
 print(out)

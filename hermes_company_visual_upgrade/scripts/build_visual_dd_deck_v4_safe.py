@@ -4,7 +4,7 @@ from pptx.util import Inches, Pt
 from pptx.enum.text import PP_ALIGN
 from pptx.dml.color import RGBColor
 
-BASE = Path(r"C:/Users/gagan/Desktop/hermes+fabric/hermes_tonbo_visual_upgrade")
+BASE = Path(__file__).resolve().parents[1]  # project folder, whatever it is named locally
 OUT = BASE / "output"
 CH = OUT / "charts"
 SEL = BASE / "assets_selected"
@@ -79,7 +79,7 @@ if pic(0):
     s.shapes.add_picture(pic(0), Inches(M_L), Inches(M_T+0.15), width=Inches(CONTENT_W), height=Inches(5.9))
 bar = s.shapes.add_shape(1, Inches(M_L), Inches(M_T+5.35), Inches(CONTENT_W), Inches(1.15))
 bar.fill.solid(); bar.fill.fore_color.rgb = RGBColor(9, 18, 36); bar.fill.transparency = 12; bar.line.fill.background()
-tbox(s, M_L+0.25, M_T+5.50, CONTENT_W-0.5, 0.55, 'Tonbo Imaging | Investor Diligence Underwriting Deck', size=25, bold=True, color=RGBColor(255,255,255))
+tbox(s, M_L+0.25, M_T+5.50, CONTENT_W-0.5, 0.55, 'Company | Investor Diligence Underwriting Deck', size=25, bold=True, color=RGBColor(255,255,255))
 tbox(s, M_L+0.25, M_T+6.00, CONTENT_W-0.5, 0.35, 'Presentation-system refinement pass: readability, containment, executive mode', size=12, color=RGBColor(220,228,240))
 
 # Slide 2 exec dashboard
@@ -198,6 +198,6 @@ panel(s, M_L, 1.20, 7.62, 5.85, 'Primary evidence', [
     'Non-official imagery is tagged with source URL in selection manifest.'
 ])
 
-out = OUT / 'Tonbo_Investor_DD_Deck_visual_v4_safe.pptx'
+out = OUT / 'Company_Investor_DD_Deck_visual_v4_safe.pptx'
 prs.save(out)
 print(out)

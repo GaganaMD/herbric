@@ -220,10 +220,11 @@ __marimo__/
 # Local DD/demo artifacts that may contain client-sensitive material.
 DD_Metrics_Comprehensive_Workbook.xlsx
 prompt.txt
-hermes_investor_dd_tonbo/
-hermes_tonbo_visual_upgrade/logs/
-hermes_tonbo_visual_upgrade/output/
-hermes_tonbo_visual_upgrade/research/
-hermes_tonbo_visual_upgrade/assets_raw/
-hermes_tonbo_visual_upgrade/assets_selected/
-hermes_tonbo_visual_upgrade/assets_filtered/
+# Wildcards cover both the current (company) and any older locally-named folders.
+hermes_investor_dd_*/
+hermes_*_visual_upgrade/logs/
+hermes_*_visual_upgrade/output/
+hermes_*_visual_upgrade/research/
+hermes_*_visual_upgrade/assets_raw/
+hermes_*_visual_upgrade/assets_selected/
+hermes_*_visual_upgrade/assets_filtered/

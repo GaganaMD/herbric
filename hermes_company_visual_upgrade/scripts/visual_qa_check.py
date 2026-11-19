@@ -2,7 +2,8 @@ from pathlib import Path
 from pptx import Presentation
 import json
 
-pptx_path = Path(r"C:/Users/gagan/Desktop/hermes+fabric/hermes_tonbo_visual_upgrade/output/Tonbo_Investor_DD_Deck_visual_v3.pptx")
+BASE = Path(__file__).resolve().parents[1]  # project folder, whatever it is named locally
+pptx_path = BASE / "output" / "Company_Investor_DD_Deck_visual_v3.pptx"
 prs = Presentation(str(pptx_path))
 
 report=[]

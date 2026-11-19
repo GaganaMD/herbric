@@ -56,7 +56,7 @@ Hermes standalone:
 Hermes + Fabric bridge:
 - Raw corpus -> chunking -> per-chunk multi-pattern Fabric runs -> combined semantic context -> Hermes synthesis.
 
-Observed DD run evidence (`hermes_investor_dd_tonbo/bridge_inputs/out/logs/pipeline.log`):
+Observed DD run evidence (`hermes_investor_dd_company/bridge_inputs/out/logs/pipeline.log`):
 - Chunking: 2 chunks.
 - Fabric: 8/8 successful runs (4 patterns × 2 chunks).
 - Hermes synthesis executed after aggregation.
@@ -86,7 +86,7 @@ Fabric multi-pattern preprocessing introduced representation diversity:
 This creates multiple semantic “views” per chunk before synthesis, reducing dependence on a single compression bias.
 
 ## 9) Reasoning-quality changes
-In the DD output (`hermes_investor_dd_tonbo/bridge_inputs/out/hermes_final_output.md`), synthesis shows:
+In the DD output (`hermes_investor_dd_company/bridge_inputs/out/hermes_final_output.md`), synthesis shows:
 - explicit evidence-first framing,
 - quantified risk bullets,
 - clear underwriting implications,
