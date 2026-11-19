@@ -8,7 +8,7 @@ This document explains the implemented bridge in this workspace as an orchestrat
 - `bridge/hermes_runner.py`
 - `bridge/utils.py`
 - `bridge/config.yaml`
-- runtime artifacts under `bridge/out/` and DD-specific bridge runs under `hermes_investor_dd_tonbo/bridge_inputs/out/`
+- runtime artifacts under `bridge/out/` and DD-specific bridge runs under `hermes_investor_dd_company/bridge_inputs/out/`
 
 It does not describe Hermes internals or Fabric internals beyond their invocation contract at the bridge boundary.
 
@@ -127,13 +127,13 @@ Failure states are logged, not hidden:
 
 ### DD-specific orchestration outputs
 For diligence runs in this workspace, a task-scoped mirror config/output path was used:
-- `hermes_investor_dd_tonbo/bridge_inputs/bridge_config_dd.yaml`
-- `hermes_investor_dd_tonbo/bridge_inputs/out/...`
+- `hermes_investor_dd_company/bridge_inputs/bridge_config_dd.yaml`
+- `hermes_investor_dd_company/bridge_inputs/out/...`
 
 Adjacent DD workflow folders used by downstream analytics/deck generation:
-- `hermes_investor_dd_tonbo/analytics/` (workbook extracts, metrics lines, derived tables)
-- `hermes_investor_dd_tonbo/research/` (summaries, evidence packs)
-- `hermes_investor_dd_tonbo/output/` (presentation outputs)
+- `hermes_investor_dd_company/analytics/` (workbook extracts, metrics lines, derived tables)
+- `hermes_investor_dd_company/research/` (summaries, evidence packs)
+- `hermes_investor_dd_company/output/` (presentation outputs)
 
 This keeps reusable bridge code static and run artifacts externalized by task.
 

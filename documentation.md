@@ -22,8 +22,8 @@ Primary evidence source:
 
 Primary execution tracks present in this repo:
 
-1. Baseline build track (`hermes_investor_dd_tonbo`)
-2. Upgrade/refinement track (`hermes_investor_dd_tonbo_upgrade`)
+1. Baseline build track (`hermes_investor_dd_company`)
+2. Upgrade/refinement track (`hermes_investor_dd_company_upgrade`)
 
 Core philosophy:
 
@@ -243,10 +243,10 @@ Top-level observed:
 - `prompt.txt` - workflow contract and constraints
 - `SOUL.md` - reasoning philosophy
 - `DD_Metrics_Comprehensive_Workbook.xlsx` - primary evidence workbook
-- `hermes_investor_dd_tonbo/` - baseline DD build pipeline
-- `hermes_investor_dd_tonbo_upgrade/` - upgraded/refined pipeline
+- `hermes_investor_dd_company/` - baseline DD build pipeline
+- `hermes_investor_dd_company_upgrade/` - upgraded/refined pipeline
 
-### 8.1 `hermes_investor_dd_tonbo/`
+### 8.1 `hermes_investor_dd_company/`
 
 - `analytics/scripts/analyze_workbook.py`
   - cleans workbook tabs and generates baseline analytical outputs
@@ -264,12 +264,12 @@ Top-level observed:
   - workbook coverage summary
 - `analytics/outputs/tab_artifacts/*.md`
   - extracted high-signal lines by tab
-- `output/Tonbo_Investor_DD_WorkbookDriven_v1.pptx`
-- `output/Tonbo_Investor_DD_WorkbookDriven_v2.pptx`
+- `output/Company_Investor_DD_WorkbookDriven_v1.pptx`
+- `output/Company_Investor_DD_WorkbookDriven_v2.pptx`
 - `output/deck_build_qa.json`
 - `output/metrics_extracted.json`
 
-### 8.2 `hermes_investor_dd_tonbo_upgrade/`
+### 8.2 `hermes_investor_dd_company_upgrade/`
 
 - `analytics/scripts/run_full_workflow.py`
   - full ingestion + charting + v3/v4 generation + basic QA summary
@@ -293,11 +293,11 @@ Top-level observed:
 - `output/v6_rebalance_report.json`
 - `output/v6_final_polish_report.json`
 - `output/presentation_cognition_proxy_audit.json`
-- `output/Tonbo_Investor_DD_WorkbookDriven_v3.pptx`
-- `output/Tonbo_Investor_DD_WorkbookDriven_v4_final.pptx`
-- `output/Tonbo_Investor_DD_WorkbookDriven_v5_enhanced.pptx`
-- `output/Tonbo_Investor_DD_WorkbookDriven_v6_rebalanced.pptx`
-- `output/Tonbo_Investor_DD_WorkbookDriven_v6_final_polished.pptx`
+- `output/Company_Investor_DD_WorkbookDriven_v3.pptx`
+- `output/Company_Investor_DD_WorkbookDriven_v4_final.pptx`
+- `output/Company_Investor_DD_WorkbookDriven_v5_enhanced.pptx`
+- `output/Company_Investor_DD_WorkbookDriven_v6_rebalanced.pptx`
+- `output/Company_Investor_DD_WorkbookDriven_v6_final_polished.pptx`
 
 ---
 
@@ -564,20 +564,20 @@ which markitdown
 which soffice || true
 
 # 5) Run baseline analytics + deck
-python hermes_investor_dd_tonbo/analytics/scripts/analyze_workbook.py
-python hermes_investor_dd_tonbo/analytics/scripts/build_investor_dd_deck.py
+python hermes_investor_dd_company/analytics/scripts/analyze_workbook.py
+python hermes_investor_dd_company/analytics/scripts/build_investor_dd_deck.py
 
 # 6) Run upgrade workflow
-python hermes_investor_dd_tonbo_upgrade/analytics/scripts/run_full_workflow.py
-python hermes_investor_dd_tonbo_upgrade/analytics/scripts/enhance_v5.py
-python hermes_investor_dd_tonbo_upgrade/analytics/scripts/refine_v6_presentation.py
-python hermes_investor_dd_tonbo_upgrade/analytics/scripts/v6_final_polish.py
+python hermes_investor_dd_company_upgrade/analytics/scripts/run_full_workflow.py
+python hermes_investor_dd_company_upgrade/analytics/scripts/enhance_v5.py
+python hermes_investor_dd_company_upgrade/analytics/scripts/refine_v6_presentation.py
+python hermes_investor_dd_company_upgrade/analytics/scripts/v6_final_polish.py
 ```
 
 Validation checkpoints:
 
 - final PPT exists at:
-  - `C:\Users\gagan\Desktop\hermes-exp\PPT_creation\hermes_investor_dd_tonbo_upgrade\output\Tonbo_Investor_DD_WorkbookDriven_v6_final_polished.pptx`
+  - `C:\Users\gagan\Desktop\hermes-exp\PPT_creation\hermes_investor_dd_company_upgrade\output\Company_Investor_DD_WorkbookDriven_v6_final_polished.pptx`
 - QA reports exist and indicate no overdense slides
 - proxy audit indicates no no-visual slides in final version
 
@@ -607,7 +607,7 @@ Validation checkpoints:
 
 Primary final deliverable:
 
-- `C:\Users\gagan\Desktop\hermes-exp\PPT_creation\hermes_investor_dd_tonbo_upgrade\output\Tonbo_Investor_DD_WorkbookDriven_v6_final_polished.pptx`
+- `C:\Users\gagan\Desktop\hermes-exp\PPT_creation\hermes_investor_dd_company_upgrade\output\Company_Investor_DD_WorkbookDriven_v6_final_polished.pptx`
 
 Primary governance artifacts:
 

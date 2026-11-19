@@ -2,18 +2,18 @@ from pathlib import Path
 from reportlab.lib.pagesizes import A4
 from reportlab.pdfgen import canvas
 
-BASE = Path(r"C:/Users/gagan/Desktop/hermes+fabric/hermes_tonbo_visual_upgrade")
+BASE = Path(__file__).resolve().parents[1]  # project folder, whatever it is named locally
 RESEARCH = BASE / "research"
 RESEARCH.mkdir(parents=True, exist_ok=True)
 
-md = '''# Tonbo Imaging Contextual Intelligence Brief (for Visual Retrieval + Investor Framing)
+md = '''# Company Contextual Intelligence Brief (for Visual Retrieval + Investor Framing)
 
 Date: 2026-05-25
 Scope: 1–2 page grounding brief for image selection and slide storytelling in an investor DD deck.
 Confidence: Medium (official-site text and bridge evidence are strong; public web image access is partially constrained in this environment).
 
 ## 1) Company/domain grounding
-Tonbo Imaging operates in the electro-optical/infrared (EO/IR) and advanced sensing domain, with defense and security relevance. The business context is imaging systems, sensing payloads, thermal/night-vision-adjacent capability, and deployment-grade hardware/software integration.
+Company Imaging operates in the electro-optical/infrared (EO/IR) and advanced sensing domain, with defense and security relevance. The business context is imaging systems, sensing payloads, thermal/night-vision-adjacent capability, and deployment-grade hardware/software integration.
 
 Why this matters for visual retrieval:
 - imagery should prioritize field-deployment realism (platform integration, sensor payload context, monitoring environments),
@@ -84,7 +84,7 @@ c = canvas.Canvas(str(pdf_path), pagesize=A4)
 width, height = A4
 x, y = 40, height - 40
 c.setFont('Helvetica-Bold', 13)
-c.drawString(x, y, 'Tonbo Imaging Contextual Intelligence Brief')
+c.drawString(x, y, 'Company Contextual Intelligence Brief')
 y -= 24
 c.setFont('Helvetica', 9)
 for line in md.splitlines():

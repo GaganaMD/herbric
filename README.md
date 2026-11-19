@@ -98,7 +98,7 @@ docs/
   BRIDGE_INTERNAL_ARCHITECTURE_DEEP_DIVE.md
   assets/
 
-hermes_tonbo_visual_upgrade/
+hermes_company_visual_upgrade/
   scripts/
 ```
 
